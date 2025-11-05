@@ -3,7 +3,7 @@ header('Content-Type: application/json; charset=utf-8');
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use App\Router;
+use App\Controllers\TaskController;
 
-$router = new Router();
-$router->run();
+$taskController = new TaskController();
+$taskController->run();
